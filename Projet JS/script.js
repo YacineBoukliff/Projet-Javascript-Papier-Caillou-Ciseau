@@ -19,3 +19,17 @@ let PrixTotal = cafe + bagel + bagel1 + soupe
 console.log(`Le prix de tout ces aliments est de : ${PrixTotal}`)
 
 // Exo 5 
+
+let taxe = PrixTotal * 0.1
+// Exo 6 
+
+console.log(`La taxe de 10% est :  ${taxe}`)
+
+// Exo 7 
+
+let PrixTotalEtTaxe = taxe + PrixTotal
+console.log(`Le prix total + le prix avec taxe est de : ${PrixTotalEtTaxe}`)
+
+// Exo 8 
+
+console.log(`${taxe} ::`)
