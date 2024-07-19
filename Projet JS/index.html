@@ -4,27 +4,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="script.js"></script>
   </head>
   <body>
     <h1>Jeu du Papier Caillou Ciseau</h1>
+
     <button
       onclick="
   const chiffrealeatoire = Math.random();
+  let computermove = '';
   
   if (chiffrealeatoire >= 0 && chiffrealeatoire < 1/3){
-    console.log(`Papier`)
+    computermove = `Caillou`
   }
   else if (chiffrealeatoire >= 1/3 && chiffrealeatoire < 2/3){
-    console.log(`Caillou`)
+    computermove = `Papier`
   }
   else if (chiffrealeatoire >= 2/3 && chiffrealeatoire < 1){
-    console.log(`Ciseau`)
+    computermove = `Ciseau`
   } 
+
+   let result = ``
+  if (computermove === `Caillou`){
+    result = `Egalite`
+  }
+
+  else if(computermove === `Papier`){
+    result = `Tu as perdu`
+  }
+  
+  else if(computermove === `Ciseau`){
+    result = `Tu as gagné`
+  }
+  alert(`Tu as choisi Caillou l'ordinateur a choisi ${computermove} donc ${result}`)
+console.log(result)
+
   "
+    >
+      Caillou
+    </button>
+
+    <button
+      onclick="
+    
+    const chiffrealeatoire1 = Math.random();
+  let computermove1 = '';
+  
+  if (chiffrealeatoire1 >= 0 && chiffrealeatoire1 < 1/3){
+    computermove1 = `Caillou`
+  }
+  else if (chiffrealeatoire1 >= 1/3 && chiffrealeatoire1 < 2/3){
+    computermove1 = `Papier`
+  }
+  else if (chiffrealeatoire1 >= 2/3 && chiffrealeatoire1 < 1){
+    computermove1 = `Ciseau`
+  } 
+
+   let result1 = ``
+  if (computermove1 === `Caillou`){
+    result1 = `Tu as gagné`
+  }
+
+  else if(computermove1 === `Papier`){
+    result1 = `Egalité`
+  }
+  
+  else if(computermove1 === `Ciseau`){
+    result1 = `Tu as perdu`
+  }
+  alert(`Tu as choisi Papier l'ordinateur a choisi ${computermove1} donc ${result1}`)
+console.log(result1)
+    
+    
+    "
     >
       Papier
     </button>
-    <button>Caillou</button>
-    <button>Ciseau</button>
+
+    <button
+      onclick="
+    const chiffrealeatoire2 = Math.random();
+  let computermove2 = '';
+  
+  if (chiffrealeatoire2 >= 0 && chiffrealeatoire2 < 1/3){
+    computermove2 = `Caillou`
+  }
+  else if (chiffrealeatoire2 >= 1/3 && chiffrealeatoire2 < 2/3){
+    computermove2 = `Papier`
+  }
+  else if (chiffrealeatoire2 >= 2/3 && chiffrealeatoire2 < 1){
+    computermove2 = `Ciseau`
+  } 
+
+   let result2 = ``
+  if (computermove2 === `Caillou`){
+    result2 = `Tu as perdu`
+  }
+
+  else if(computermove2 === `Papier`){
+    result2 = `Tu as gagné`
+  }
+  
+  else if(computermove2 === `Ciseau`){
+    result2 = `Egalité`
+  }
+
+
+
+  alert(`Tu as choisi Ciseau l'ordinateur a choisi ${computermove2} donc ${result2}`);
+console.log(result2)
+    "
+    >
+      Ciseau
+    </button>
   </body>
 </html>
