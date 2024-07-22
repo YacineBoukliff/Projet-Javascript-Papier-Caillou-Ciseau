@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Boucle et Tableaux</title>
+  </head>
+  <body>
+    <script>
+      /*
+      const myArray = [10, 20, 30];
+
+      myArray[0] = 55;
+      console.log(myArray[0]);
+
+      [1, "hello", true, { name: `test` }];
+
+      console.log(myArray.length);
+      myArray.push(55);
+      console.log(myArray);
+      myArray.splice(0, 2);
+      console.log(myArray);
+      */
+
+      const nums = [1, 5, 8];
+      let total = 0;
+
+      for (let i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        total += num;
+      }
+
+      console.log(total);
+
+      const numsDoubled = [];
+
+      for (let i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        numsDoubled.push(nums * 2);
+      }
+
+      console.log(numsDoubled);
+    </script>
+  </body>
+</html>
